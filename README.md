@@ -1,5 +1,5 @@
 # attenuator
-A small program to control a custom attenuator with a Rospbarry Pi.
+A small program to control a custom attenuator with a Raspbarry Pi.
 
 To install:
 
