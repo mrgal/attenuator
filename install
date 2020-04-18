@@ -1,0 +1,25 @@
+# install attenuator program
+# must be run as root, e. g. "sudo ./install"
+
+# Make sure only root can run the script
+if [ "$(id -u)" != "0" ]; then
+   echo '"install" must be run by root, e.g. "sudo ./install"' 1>&2
+   exit 1
+fi
+
+echo "Copy the file to /usr/bin"
+cp attenuator /usr/bin
+
+echo "Make the file executable"
+chmod +x /usr/bin/attenuator
+
+echo "Add a symbolic link to Desktop"
+ln -s /usr/bin/attenuator /home/pi/Desktop/attenuator
+
+echo "Create autostart directory"
+mkdir /home/pi/.config/autostart
+
+echo "Copy .desktop file to created directory"
+cp attenuator.desktop /home/pi/.config/autostart
+
+echo "Attenuator installed. Please reboot your computer."

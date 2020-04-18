@@ -1,0 +1,4 @@
+[Desktop Entry]
+Type=Application
+Name=Attenuator
+Exec=/usr/bin/attenuator
