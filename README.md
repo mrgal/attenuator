@@ -1,5 +1,5 @@
 # attenuator
-A small program to control a custom attenuator with a Raspbarry Pi.
+A small program to control a custom attenuator with a Raspberry Pi.
 
 To install:
 
